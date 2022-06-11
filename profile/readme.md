@@ -18,17 +18,19 @@
 
 - [About Project](#about-project)
 - [Repository](#repository)
-  * [Machine Learning](#machine-learning)
-  * [Mobile Development](#mobile-development)
-  * [Cloud Computing](#cloud-computing)
+- [Machine Learning](#machine-learning)
+- [Mobile Development](#mobile-development)
+- [Cloud Computing](#cloud-computing)
 - [Contact](#contact)
 
 <!-- About -->
 
 # About Project
 
-## Team ID : C22-PS083
-## Theme : Human Healthcare & Animal Welfare
+| Team ID | C22-PS083                         |
+|---------|-----------------------------------|
+| Theme   | Human Healthcare & Animal Welfare |
+
 ## Team
 
 | ID         | NAME                    | PATH               | University                          | CONTACT |
@@ -42,6 +44,12 @@
 
 <!-- Repository -->
 # Repository
+We have a repository
+| Name               | Link Repository |
+|--------------------|-----------------|
+| Machine Learning   |  [https://github.com/cat-pedigree/CatPedigree_ML_Model](https://github.com/cat-pedigree/CatPedigree_ML_Model)               |
+| Mobile Development |  [https://github.com/cat-pedigree/app](https://github.com/cat-pedigree/app)               |
+| Cloud Computing    |                 |
 
 <!-- Machine Learning -->
 # Machine Learning
