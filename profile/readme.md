@@ -9,7 +9,7 @@
   <span> · </span>
     <a href="https://github.com/cat-pedigree/CatPedigree_ML_Model">Machine Learning</a>
   <span> · </span>
-    <a href="https://github.com/cat-pedigree/">Cloud Computing</a>
+    <a href="https://github.com/cat-pedigree/api-cat">Cloud Computing</a>
   </h4>
 </div>
 
@@ -22,6 +22,7 @@
 - [Mobile Development](#mobile-development)
 - [Cloud Computing](#cloud-computing)
 - [Contact](#contact)
+- [Special Thanks](#special-thanks)
 
 <!-- About -->
 
@@ -285,5 +286,143 @@ Each device has a different `SHA certificate`. To get `SHA-1`, you can run the c
 - Login
 - And then run all the features in the application
 
+## How to use the app
+This is a guide to use pedigree cat app
+
+<details>
+  <summary>How to create an account</summary>
+  Peek a boo!
+</details>
+
+<details>
+  <summary>How to login in the app</summary>
+  Peek a boo!
+</details>
+
+<details>
+  <summary>How to add a post</summary>
+  Peek a boo!
+</details>
+
+<details>
+  <summary>How to like a post</summary>
+  Peek a boo!
+</details>
+
+<details>
+  <summary>How to add a comment</summary>
+  Peek a boo!
+</details>
+
+<details>
+  <summary>How to search for users by name</summary>
+  Peek a boo!
+</details>
+
+<details>
+  <summary>How to follow users</summary>
+  Peek a boo!
+</details>
+
+<details>
+  <summary>How to view profile</summary>
+  Peek a boo!
+</details>
+
+<details>
+  <summary>How to change profile</summary>
+  Peek a boo!
+</details>
+
+<details>
+  <summary>How to add a cat</summary>
+  Peek a boo!
+</details>
+
+<details>
+  <summary>How to classify cat breeds</summary>
+  Peek a boo!
+</details>
+
+<details>
+  <summary>How to find the nearest veterinary clinic</summary>
+  Peek a boo!
+</details>
+
+<details>
+  <summary>How to see all the cats on the map</summary>
+  Peek a boo!
+</details>
+
+<details>
+  <summary>How to do a pedigree to predict cat color</summary>
+  Peek a boo!
+</details>
+
+<details>
+  <summary>How to change email</summary>
+  Peek a boo!
+</details>
+
+<details>
+  <summary>How to change password</summary>
+  Peek a boo!
+</details>
+
+<details>
+  <summary>How to login in the app</summary>
+  Peek a boo!
+</details>
+
+<details>
+  <summary>How to delete an account</summary>
+  Peek a boo!
+</details>
+
 <!-- Cloud Computing -->
 # Cloud Computing
+
+<p>
+  <a href="https://github.com/cat-pedigree/api-cat/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/cat-pedigree/api-cat" alt="contributors" />
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/github/last-commit/cat-pedigree/api-cat" alt="last update" />
+  </a>
+  <a href="https://github.com/cat-pedigree/app/network/members">
+    <img src="https://img.shields.io/github/forks/cat-pedigree/api-cat" alt="forks" />
+  </a>
+  <a href="https://github.com/cat-pedigree/app/stargazers">
+    <img src="https://img.shields.io/github/stars/cat-pedigree/api-cat" alt="stars" />
+  </a>
+  <a href="https://github.com/cat-pedigree/app/issues/">
+    <img src="https://img.shields.io/github/issues/cat-pedigree/api-cat" alt="open issues" />
+  </a>
+</p>
+
+Cat API is an API built using PHP programming language using laravel framework, you can see all the cat api code in this [repository](https://github.com/cat-pedigree/api-cat)
+
+## How to clone this project
+- You can clone the `Api Cat` repository or download the zip file from the app repository by:
+```bash
+git clone https://github.com/cat-pedigree/api-cat.git
+```
+- Open In `Visual Studio Code`
+- Make sure you copy all of the project files including the hidden ones(.env).
+- Prepare your destination computer as in http://laravel.com/docs/
+- Check you have all the necessary `PHP extensions` available in php.ini as in above link requirements. Also, watch your PHP version!
+- Install `composer` https://getcomposer.org/doc/00-intro.md
+- Run `composer install`.
+- Run `php artisan key:generate` from the command line.
+- Run `php artisan cache:clear` from command line
+- Run `php artisan migrate:fresh --seed`
+- Enjoy
+
+## Documentation API
+You can view the documentation here or via the following link
+
+## Tech
+
+
+# Special Thanks
+![Bangkit](https://github.com/cat-pedigree/.github/blob/main/assets/images/bangkit/bangkit.png)
