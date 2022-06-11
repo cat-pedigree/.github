@@ -52,7 +52,7 @@ We have a repository
 |--------------------|-----------------|
 | Machine Learning   |  [https://github.com/cat-pedigree/CatPedigree_ML_Model](https://github.com/cat-pedigree/CatPedigree_ML_Model)               |
 | Mobile Development |  [https://github.com/cat-pedigree/app](https://github.com/cat-pedigree/app)               |
-| Cloud Computing    |                 |
+| Cloud Computing    |  [https://github.com/cat-pedigree/app](https://github.com/cat-pedigree/api-cat)                  |
 
 <!-- Machine Learning -->
 # Machine Learning
