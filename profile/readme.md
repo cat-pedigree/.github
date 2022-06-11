@@ -22,6 +22,7 @@
 - [Mobile Development](#mobile-development)
 - [Cloud Computing](#cloud-computing)
 - [Contact](#contact)
+- [Special Thanks](#special-thanks)
 
 <!-- About -->
 
@@ -285,5 +286,16 @@ Each device has a different `SHA certificate`. To get `SHA-1`, you can run the c
 - Login
 - And then run all the features in the application
 
+## How to use the app
+This is a guide to use pedigree cat app
+
+<details>
+  <summary>How to create an account</summary>
+  Peek a boo!
+</details>
+
 <!-- Cloud Computing -->
 # Cloud Computing
+
+# Special Thanks
+![Bangkit](https://github.com/cat-pedigree/.github/blob/main/assets/images/bangkit/bangkit.png)
