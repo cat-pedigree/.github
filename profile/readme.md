@@ -97,7 +97,7 @@ how to get Google Maps API key? Don't worry, Android Studio will provide a link 
 - Select the Android apps checkbox under Application restrictions and add new data by clicking ADD AN ITEM. Then fill in the package name of your application and SHA-1 of the device used.
 Notes:
 Each device has a different SHA certificate. To get SHA-1, you can run the command gradlew signingreport on Terminal
-- Setelah usai, klik SAVE dan copy key dengan awalan “AIza…” yang sudah didapat ke meta-data pada AndroidManifest berikut.
+- When finished, click SAVE and copy the key with the prefix "AIza ..." that has been obtained to the meta-data in the following AndroidManifest.
 ```xml
   <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.catpedigree.capstone.catpedigreebase">
