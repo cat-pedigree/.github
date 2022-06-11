@@ -16,10 +16,96 @@
 <!-- Table of Contents -->
 # :notebook_with_decorative_cover: Table of Contents
 
-- [Contact](#contact)
+- [Repository](#repository)
+  * [Machine Learning](#machine-learning)
+  * [Mobile Development](#mobile-development)
+  * [Cloud Computing](#cloud-computing)
+- [Team](#team)
 
-<!-- Contact -->
-## Contact
+<!-- Repository -->
+## Repository
+
+<!-- Machine Learning -->
+### Machine Learning
+
+<!-- Mobile Development -->
+### Mobile Development
+You can see all the mobile development code in the repository https://github.com/cat-pedigree/app
+
+#### How to clone this project
+- You can clone the Cat Pedigree App repository to download the zip file from this repository, or by running the git command on android studio:
+```bash
+git clone https://github.com/cat-pedigree/app.git
+```
+- Open In Android studio
+- Please wait gradle project synchronization
+
+#### How to Get Google Maps API key
+how to get Google Maps API key? Don't worry, Android Studio will provide a link that you can directly use to create a project in Google Console and get an API Key for Google Maps.
+- First, sign in to the Google Cloud Console and go to the Credentials tab.
+- Check and click AGREE AND CONTINUE to agree to the Terms of Service.
+- Then go to the side menu and select API & Services → Credentials.
+- Create a new project by clicking CREATE PROJECT and changing the project name to your liking. Click CREATE to continue.
+- Next, activate the Google Maps feature by selecting Enabled APIs & Services on the side menu and clicking the + ENABLED APIS AND SERVICES button.
+- Various features will appear that you can use in the Google Cloud Console. Select Maps SDK for Android and click Enable.
+- Then select the Credentials menu on the side menu and click the CREATE CREDENTIALS → API key button to create a new credential.
+- At this point, you have got a key that usually starts with the word “AIza…”. Actually you can already use this API key, but this key is still not secure because any project can use it. To be more secure, click the Edit API key link.
+- Select the Android apps checkbox under Application restrictions and add new data by clicking ADD AN ITEM. Then fill in the package name of your application and SHA-1 of the device used.
+Notes:
+Each device has a different SHA certificate. To get SHA-1, you can run the command gradlew signingreport on Terminal
+- Setelah usai, klik SAVE dan copy key dengan awalan “AIza…” yang sudah didapat ke meta-data pada AndroidManifest berikut.
+```xml
+  <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.catpedigree.capstone.catpedigreebase">
+    <application
+      ...
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY" />
+    </application>
+    ...
+</manifest>
+```
+
+<!-- Tech Stack -->
+#### Tech Stack
+
+ - [Kotlin](#)
+ - [Tensorflow Lite](#)
+ - [Retrofit](#)
+ - [Room](#)
+ - [Room Paging](#)
+ - [Camerax](#)
+ - [Datastore](#)
+ - [Gson](#)
+ - [Glide](#)
+ - [Navigation Dynamic](#)
+ - [Viewmodel](#)
+ - [Live Data](#)
+ - [Navigation UI](#)
+ - [Constraint Layout](#)
+ - [Circle Image](#)
+
+#### Prerequisites
+
+- Android 9.0 (Pie) API 28
+- Internet Connection
+- Camera
+- GPS
+
+#### Installation
+
+- Download the APK
+- Install the APK
+- Create a new account
+- Login
+- And then run all the features in the application
+
+<!-- Cloud Computing -->
+### Cloud Computing
+
+<!-- Team -->
+## Team
 
 | ID         | Name                    | Contact |
 |------------|-------------------------|---------|
