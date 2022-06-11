@@ -48,9 +48,11 @@
 
 <!-- Mobile Development -->
 ### Mobile Development
-You can see all the mobile development code in the repository https://github.com/cat-pedigree/app
+Cat Pedigree is an application created using the Kotlin programming language, you can view all the mobile development code in the repository https://github.com/cat-pedigree/app and to see the application usage guide you can see the following link
 
 #### User Interface
+You can see all the user interface and user experience at the following link
+
 |  ![User Interface](https://github.com/cat-pedigree/.github/blob/main/assets/images/ui/1.png) | ![User Interface](https://github.com/cat-pedigree/.github/blob/main/assets/images/ui/2.png)  |
 |---|---|
 | ![User Interface](https://github.com/cat-pedigree/.github/blob/main/assets/images/ui/3.png)  | ![User Interface](https://github.com/cat-pedigree/.github/blob/main/assets/images/ui/4.png)  |
