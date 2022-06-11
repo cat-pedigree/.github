@@ -34,6 +34,8 @@
 
 ## Team
 
+ ![Cat Pedigree Teams](https://github.com/cat-pedigree/.github/blob/main/assets/images/team/team.png)
+
 | ID         | NAME                    | PATH               | University                          | CONTACT |
 |------------|-------------------------|--------------------|-------------------------------------|---------|
 | M7269J2321 | Bugi Sulistiyo          | Machine Learning   | Universitas Mulawarman              |  <a href="https://www.linkedin.com/in/bugi-sulistiyo/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a> <a href="https://github.com/Bugi-Sulistiyo"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>        |
