@@ -21,7 +21,7 @@
   * [Machine Learning](#machine-learning)
   * [Mobile Development](#mobile-development)
   * [Cloud Computing](#cloud-computing)
-- [Team](#team)
+- [Contact](#contact)
 
 <!-- About -->
 
