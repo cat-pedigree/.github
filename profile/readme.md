@@ -48,6 +48,25 @@
 
 <!-- Mobile Development -->
 ### Mobile Development
+
+<p>
+  <a href="https://github.com/cat-pedigree/app/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/cat-pedigree/app" alt="contributors" />
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/github/last-commit/cat-pedigree/app" alt="last update" />
+  </a>
+  <a href="https://github.com/cat-pedigree/app/network/members">
+    <img src="https://img.shields.io/github/forks/cat-pedigree/app" alt="forks" />
+  </a>
+  <a href="https://github.com/cat-pedigree/app/stargazers">
+    <img src="https://img.shields.io/github/stars/cat-pedigree/app" alt="stars" />
+  </a>
+  <a href="https://github.com/cat-pedigree/app/issues/">
+    <img src="https://img.shields.io/github/issues/cat-pedigree/app" alt="open issues" />
+  </a>
+</p>
+
 Cat Pedigree is an application created using the Kotlin programming language, you can view all the mobile development code in the repository https://github.com/cat-pedigree/app and to see the application usage guide you can see the following link
 
 #### User Interface
