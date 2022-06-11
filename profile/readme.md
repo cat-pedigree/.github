@@ -67,7 +67,7 @@
   </a>
 </p>
 
-Cat Pedigree is an application created using the Kotlin programming language, you can view all the mobile development code in the repository https://github.com/cat-pedigree/app and to see the application usage guide you can see the following link
+Cat Pedigree is an application created using the `Kotlin programming language`, you can view all the mobile development code in the repository `https://github.com/cat-pedigree/app` and to see the application usage guide you can see the following link
 
 #### User Interface
 You can see all the user interface and user experience at the following link
@@ -96,19 +96,19 @@ git clone https://github.com/cat-pedigree/app.git
 - End
 
 #### How to Get Google Maps API key
-how to get Google Maps API key? Don't worry, Android Studio will provide a link that you can directly use to create a project in Google Console and get an API Key for Google Maps.
-- First, sign in to the Google Cloud Console and go to the Credentials tab.
-- Check and click AGREE AND CONTINUE to agree to the Terms of Service.
-- Then go to the side menu and select API & Services → Credentials.
-- Create a new project by clicking CREATE PROJECT and changing the project name to your liking. Click CREATE to continue.
-- Next, activate the Google Maps feature by selecting Enabled APIs & Services on the side menu and clicking the + ENABLED APIS AND SERVICES button.
-- Various features will appear that you can use in the Google Cloud Console. Select Maps SDK for Android and click Enable.
-- Then select the Credentials menu on the side menu and click the CREATE CREDENTIALS → API key button to create a new credential.
-- At this point, you have got a key that usually starts with the word “AIza…”. Actually you can already use this API key, but this key is still not secure because any project can use it. To be more secure, click the Edit API key link.
-- Select the Android apps checkbox under Application restrictions and add new data by clicking ADD AN ITEM. Then fill in the package name of your application and SHA-1 of the device used.
+how to get `Google Maps API key?` Don't worry, Android Studio will provide a link that you can directly use to create a project in Google Console and get an API Key for Google Maps.
+- First, sign in to the `Google Cloud Console` and go to the `Credentials tab`.
+- Check and click `AGREE AND CONTINUE` to agree to the Terms of Service.
+- Then go to the side menu and select `API & Services → Credentials`.
+- Create a new project by clicking `CREATE PROJECT` and changing the project name to your liking. Click `CREATE` to continue.
+- Next, activate the Google Maps feature by selecting `Enabled APIs & Services` on the side menu and clicking the `+ ENABLED APIS AND SERVICES` button.
+- Various features will appear that you can use in the `Google Cloud Console`. Select `Maps SDK for Android` and click `Enable`.
+- Then select the Credentials menu on the side menu and click the `CREATE CREDENTIALS` → `API key` button to create a new credential.
+- At this point, you have got a key that usually starts with the word `“AIza…”`. Actually you can already use this API key, but this key is still not secure because any project can use it. To be more secure, click the Edit API key link.
+- Select the `Android apps` checkbox under Application restrictions and add new data by clicking `ADD AN ITEM`. Then fill in the package name of your `application and SHA-1` of the device used.
 Notes:
-Each device has a different SHA certificate. To get SHA-1, you can run the command gradlew signingreport on Terminal
-- When finished, click SAVE and copy the key with the prefix "AIza ..." that has been obtained to the meta-data in the following AndroidManifest.
+Each device has a different `SHA certificate`. To get `SHA-1`, you can run the command `gradlew signingreport` on `Terminal`
+- When finished, click `SAVE` and `copy` the key with the prefix `"AIza ..."` that has been obtained to the meta-data in the following `AndroidManifest`.
 ```xml
   <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.catpedigree.capstone.catpedigreebase">
