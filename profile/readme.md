@@ -77,12 +77,23 @@ You can see all the user interface and user experience at the following link
 | ![User Interface](https://github.com/cat-pedigree/.github/blob/main/assets/images/ui/3.png)  | ![User Interface](https://github.com/cat-pedigree/.github/blob/main/assets/images/ui/4.png)  |
 
 #### How to clone this project
-- You can clone the Cat Pedigree App repository to download the zip file from this repository, or by running the git command on android studio:
+
+##### Clone Manual
+- You can clone the `Cat Pedigree App` repository or download the zip file from the app repository by:
 ```bash
 git clone https://github.com/cat-pedigree/app.git
 ```
-- Open In Android studio
+- Open In `Android studio`
 - Please wait gradle project synchronization
+- End
+
+##### Clone project in android studio
+
+- Open the android studio
+- Click menu `file` -> `new` -> `project from version control`
+- Enter the cat pedigree app repository link `https://github.com/cat-pedigree/app.git`
+- Please wait gradle project synchronization
+- End
 
 #### How to Get Google Maps API key
 how to get Google Maps API key? Don't worry, Android Studio will provide a link that you can directly use to create a project in Google Console and get an API Key for Google Maps.
