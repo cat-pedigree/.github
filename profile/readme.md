@@ -25,11 +25,11 @@
 
 <!-- About -->
 
-## About Project
+# About Project
 
-### Team ID : C22-PS083
-### Theme : Human Healthcare & Animal Welfare
-### Team
+## Team ID : C22-PS083
+## Theme : Human Healthcare & Animal Welfare
+## Team
 
 | ID         | NAME                    | PATH               | University                          | CONTACT |
 |------------|-------------------------|--------------------|-------------------------------------|---------|
@@ -41,13 +41,134 @@
 | C7312F2682 | Fina Enno Rizki Oktavia | Cloud Computing    | Universitas Sebelas Maret           |  <a href="https://www.linkedin.com/in/finaenno/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a><a href="https://github.com/finaenno"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>        |
 
 <!-- Repository -->
-## Repository
+# Repository
 
 <!-- Machine Learning -->
-### Machine Learning
+# Machine Learning
+
+<p>
+  <a href="https://github.com/cat-pedigree/CatPedigree_ML_Model/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/cat-pedigree/CatPedigree_ML_Model" alt="contributors" />
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/github/last-commit/cat-pedigree/CatPedigree_ML_Model" alt="last update" />
+  </a>
+  <a href="https://github.com/cat-pedigree/app/network/members">
+    <img src="https://img.shields.io/github/forks/cat-pedigree/CatPedigree_ML_Model" alt="forks" />
+  </a>
+  <a href="https://github.com/cat-pedigree/app/stargazers">
+    <img src="https://img.shields.io/github/stars/cat-pedigree/CatPedigree_ML_Model" alt="stars" />
+  </a>
+  <a href="https://github.com/cat-pedigree/app/issues/">
+    <img src="https://img.shields.io/github/issues/cat-pedigree/CatPedigree_ML_Model" alt="open issues" />
+  </a>
+</p>
+
+You can see all the machine learning code in this [repository](https://github.com/cat-pedigree/CatPedigree_ML_Model)
+
+## The Cat Pedigree Model for Classifying and Predicting Breeds of the Cats.
+The CatPedigree - Cat App uses Machine Learning to `classify` and `predict Cat Breeds`. The model were build using TensorFlow Convolutional Neural Network.
+
+End Goal: Take a photo of a cat and gain their respective breed and information about them also to predict their crossbirth (currently supports only color pedigree prediction). 
+
+## What's in this repo?
+
+* images/ (soon) - folder with sample of cat images
+* cp_preprocessing_data.py - Python script that collects the photos from the post-cleaned dataset and split them into train/test directories automatically respective to their train/test split proportion.
+* requirements.txt - A text file with the dependency requirements for this project.
+
+## Dataset
+The dataset were gathered from 2 resources publicly available on the internet.
+- Kaggle Dataset. URL: https://www.kaggle.com/datasets/ma7555/cat-breeds-dataset 
+- Robots. URL:
+
+1. Kaggle Dataset.
+by ___
+Description
+
+2. Robots. URL:
+Description
+
+## Classification Workflow
+On progress
+
+## Timeline and Master Plan
+
+As of: 24 May 2022 (Since this documentation is written)
+Note: might likely to change.
+
+## `Stage 1 - Gathering and Cleaning Dataset (done)`
+Gathering the dataset. We also clean the dataset for each breeds to remove unrelated or corrupted images to avoid overfit/underfit or even worst model performance. We need to store images at large scale, using Google Storage and Google Drive to store the dataset and accessible to the CatPedigree ML Team.
+
+## `Stage 2 - Image Preprocessing and data augmentation (done)`
+Perform Feature Engineering to remove unwanted noise from images. Perform Image Augmentation to avoid overfit and slightly improve the model from only 20% to 80% of accuracy.
+
+## `Stage 3 - Build the model prototype (done)`
+Build simple model architecture using Tensorflow Sequential, apply some of the Transfer Learning Model from TensorflowHub like MobileNet, ResNet, and InceptionV3 and perform Fine Tuning to retrain the model to the spesific cases of cats classification.
+
+## `Stage 4 - Convert to TFLite and ready for deployment (done)`
+Model already converted to TFLite and can be used by the Mobile Devs Team.
+
+## `Stage 5 - Optimizing model performance (on progress)`
+Hyperpareter Tuning to gain optimized model. If have to, we need to reduce the variance of the images.
+
+## `Stage 6` 
+Repeat the process untill we can get the desired performance
+
+## The Pedigree Models API
+The models are available in Keras Saved model form and also Already converted into TensorFlow Lite Model that can be embedded into mobile app. Download the labels under labels.txt and also the desired model. Since the model is still optimized, used the latest model version. model_latestrelease.tflite . Currently the latest model has the highest performance with over >80% of accuracy (and still will be improved). 
+
+## Datasets for Pedigree
+The datasets were handmade by The Machine Learning Engineer Team collected by CatBreeds Calculator that spesifically predicting the color of the breeds crossbirth. URL:  https://catbreedersensei.com/cat-genetics-calculator/ . The datasets collected under the .csv format and using the team model architecture  with TensorFlow  and converted into separate tflite model from the classification model.
+
+Model for predicting the pedigree but currently supporting only color predictio
+Supported Color for Male `['base_color_male']`:
+
+* `black` : 0
+* `gray` : 1
+* `orange` : 2
+* `silver` : 3
+
+Supported Color for Female `['base_color_female']`:
+
+* `black`: 0
+* `gray`: 1
+* `orange`: 2
+* `silver` : 3
+* `black tortie`: 4
+* `gray tortie`: 5
+
+Output:
+
+* `black`
+* `gray`
+* `orange`
+* `silver`
+* `black tortie`
+* `gray tortie`
+
+Another feature `['with_white']`:
+1 - `Has White Color`
+0 - `Has now White color`
+
+parameters:
+`features` ==> `float`
+`labels` ==> `string`
+
+Example of usage:
+Predicting the following cats matching
+male color:  
+`black` , `has white color`
+
+female color:
+`gray`, `has white color`
+
+then the model parameter will be
+`[black, 1, gray, 1]` --> with their respective numerical representation
+model prediction: Black Tortie
 
 <!-- Mobile Development -->
-### Mobile Development
+# Mobile Development
 
 <p>
   <a href="https://github.com/cat-pedigree/app/graphs/contributors">
@@ -67,18 +188,18 @@
   </a>
 </p>
 
-Cat Pedigree is an application created using the `Kotlin programming language`, you can view all the mobile development code in the repository `https://github.com/cat-pedigree/app` and to see the application usage guide you can see the following link
+Cat Pedigree is an application built using `Kotlin programming language`, you can see all the mobile development code in this [repository](https://github.com/cat-pedigree/app) and to see the application usage guide you can see the following link
 
-#### User Interface
+## User Interface
 You can see all the user interface and user experience at the following link
 
 |  ![User Interface](https://github.com/cat-pedigree/.github/blob/main/assets/images/ui/1.png) | ![User Interface](https://github.com/cat-pedigree/.github/blob/main/assets/images/ui/2.png)  |
 |---|---|
 | ![User Interface](https://github.com/cat-pedigree/.github/blob/main/assets/images/ui/3.png)  | ![User Interface](https://github.com/cat-pedigree/.github/blob/main/assets/images/ui/4.png)  |
 
-#### How to clone this project
+## How to clone this project
 
-##### Clone Manual
+### Clone Manual
 - You can clone the `Cat Pedigree App` repository or download the zip file from the app repository by:
 ```bash
 git clone https://github.com/cat-pedigree/app.git
@@ -87,7 +208,7 @@ git clone https://github.com/cat-pedigree/app.git
 - Please wait gradle project synchronization
 - End
 
-##### Clone project in android studio
+### Clone project in android studio
 
 - Open the android studio
 - Click menu `file` -> `new` -> `project from version control`
@@ -95,7 +216,7 @@ git clone https://github.com/cat-pedigree/app.git
 - Please wait gradle project synchronization
 - End
 
-#### How to Get Google Maps API key
+## How to Get Google Maps API key
 how to get `Google Maps API key?` Don't worry, Android Studio will provide a link that you can directly use to create a project in Google Console and get an API Key for Google Maps.
 - First, sign in to the `Google Cloud Console` and go to the `Credentials tab`.
 - Check and click `AGREE AND CONTINUE` to agree to the Terms of Service.
@@ -123,7 +244,7 @@ Each device has a different `SHA certificate`. To get `SHA-1`, you can run the c
 ```
 
 <!-- Tech Stack -->
-#### Tech Stack
+## Tech Stack
 
  - [Kotlin](https://kotlinlang.org/)
  - [Tensorflow Lite](https://www.tensorflow.org/lite)
@@ -141,14 +262,14 @@ Each device has a different `SHA certificate`. To get `SHA-1`, you can run the c
  - [Constraint Layout](#)
  - [Circle Image](#)
 
-#### Prerequisites
+## Prerequisites
 
 - Android 9.0 (Pie) API 28
 - Internet Connection
 - Camera
 - GPS
 
-#### Installation
+## Installation
 
 - Download the APK
 - Install the APK
@@ -157,4 +278,4 @@ Each device has a different `SHA certificate`. To get `SHA-1`, you can run the c
 - And then run all the features in the application
 
 <!-- Cloud Computing -->
-### Cloud Computing
+# Cloud Computing
