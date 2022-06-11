@@ -16,11 +16,29 @@
 <!-- Table of Contents -->
 # :notebook_with_decorative_cover: Table of Contents
 
+- [About Project](#about-project)
 - [Repository](#repository)
   * [Machine Learning](#machine-learning)
   * [Mobile Development](#mobile-development)
   * [Cloud Computing](#cloud-computing)
 - [Team](#team)
+
+<!-- About -->
+
+## About Project
+
+### Team ID : C22-PS083
+### Theme : Human Healthcare & Animal Welfare
+### Team
+
+| ID         | NAME                    | PATH               | University                          | CONTACT |
+|------------|-------------------------|--------------------|-------------------------------------|---------|
+| M7269J2321 | Bugi Sulistiyo          | Machine Learning   | Universitas Mulawarman              |  <a href="https://www.linkedin.com/in/bugi-sulistiyo/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a> <a href="https://github.com/Bugi-Sulistiyo"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>        |
+| M2272J2364 | Zahrizhal Ali           | Machine Learning   | Universitas Muslim Indonesia        |  <a href="https://www.linkedin.com/in/zahrizhal-ali/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a> <a href="https://github.com/ZahrizhalAli"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>       |
+| M2208K1922 | Wardatun Sayyidah       | Machine Learning   | Universitas Hasanuddin              | <a href="https://www.linkedin.com/in/wardatun-sayyidah/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a> <a href="https://github.com/wardatunsayyidah"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>          |
+| A2152G1665 | Robby Ramadhan Anshory  | Mobile Development | Sekolah Tinggi Teknologi Bandung    | <a href="https://www.linkedin.com/in/robby-ramadhan-anshory-99b338228/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a> <a href="https://github.com/RobbyRamadhanAsnhory"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>        |
+| A7314F2733 | Budi Setiawan           | Mobile Development | Universitas Singaperbangsa Karawang | <a href="https://www.linkedin.com/in/budi-setiawan15/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a><a href="https://github.com/budistwn15"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>         |
+| C7312F2682 | Fina Enno Rizki Oktavia | Cloud Computing    | Universitas Sebelas Maret           |  <a href="https://www.linkedin.com/in/finaenno/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a><a href="https://github.com/finaenno"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>        |
 
 <!-- Repository -->
 ## Repository
@@ -75,8 +93,8 @@ Each device has a different SHA certificate. To get SHA-1, you can run the comma
 <!-- Tech Stack -->
 #### Tech Stack
 
- - [Kotlin](#)
- - [Tensorflow Lite](#)
+ - [Kotlin](https://kotlinlang.org/)
+ - [Tensorflow Lite](https://www.tensorflow.org/lite)
  - [Retrofit](#)
  - [Room](#)
  - [Room Paging](#)
@@ -108,15 +126,3 @@ Each device has a different SHA certificate. To get SHA-1, you can run the comma
 
 <!-- Cloud Computing -->
 ### Cloud Computing
-
-<!-- Team -->
-## Team
-
-| ID         | Name                    | Contact |
-|------------|-------------------------|---------|
-| M7269J2321 | Bugi Sulistiyo          | <a href="https://www.linkedin.com/in/bugi-sulistiyo/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a> <a href="https://github.com/Bugi-Sulistiyo"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>         |
-| M2272J2364 | Zahrizhal Ali           | <a href="https://www.linkedin.com/in/zahrizhal-ali/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a> <a href="https://github.com/ZahrizhalAli"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>         |
-| M2208K1922 | Wardatun Sayyidah       |<a href="https://www.linkedin.com/in/wardatun-sayyidah/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a> <a href="https://github.com/wardatunsayyidah"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>          |
-| A2152G1665 | Robby Ramadhan Anshory  | <a href="https://www.linkedin.com/in/robby-ramadhan-anshory-99b338228/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a> <a href="https://github.com/RobbyRamadhanAsnhory"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>         |
-| A7314F2733 | Budi Setiawan           |<a href="https://www.linkedin.com/in/budi-setiawan15/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a><a href="https://github.com/budistwn15"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>          |
-| C7312F2682 | Fina Enno Rizki Oktavia | <a href="https://www.linkedin.com/in/finaenno/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a><a href="https://github.com/finaenno"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>         |
