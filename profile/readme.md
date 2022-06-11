@@ -9,7 +9,7 @@
   <span> · </span>
     <a href="https://github.com/cat-pedigree/CatPedigree_ML_Model">Machine Learning</a>
   <span> · </span>
-    <a href="https://github.com/cat-pedigree/">Cloud Computing</a>
+    <a href="https://github.com/cat-pedigree/api-cat">Cloud Computing</a>
   </h4>
 </div>
 
@@ -381,6 +381,26 @@ This is a guide to use pedigree cat app
 
 <!-- Cloud Computing -->
 # Cloud Computing
+
+<p>
+  <a href="https://github.com/cat-pedigree/api-cat/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/cat-pedigree/api-cat" alt="contributors" />
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/github/last-commit/cat-pedigree/api-cat" alt="last update" />
+  </a>
+  <a href="https://github.com/cat-pedigree/app/network/members">
+    <img src="https://img.shields.io/github/forks/cat-pedigree/api-cat" alt="forks" />
+  </a>
+  <a href="https://github.com/cat-pedigree/app/stargazers">
+    <img src="https://img.shields.io/github/stars/cat-pedigree/api-cat" alt="stars" />
+  </a>
+  <a href="https://github.com/cat-pedigree/app/issues/">
+    <img src="https://img.shields.io/github/issues/cat-pedigree/api-cat" alt="open issues" />
+  </a>
+</p>
+
+Cat API is an API built using PHP programming language using laravel framework, you can see all the cat api code in this [repository](https://github.com/cat-pedigree/api-cat)
 
 # Special Thanks
 ![Bangkit](https://github.com/cat-pedigree/.github/blob/main/assets/images/bangkit/bangkit.png)
