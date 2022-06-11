@@ -402,5 +402,27 @@ This is a guide to use pedigree cat app
 
 Cat API is an API built using PHP programming language using laravel framework, you can see all the cat api code in this [repository](https://github.com/cat-pedigree/api-cat)
 
+## How to clone this project
+- You can clone the `Api Cat` repository or download the zip file from the app repository by:
+```bash
+git clone https://github.com/cat-pedigree/api-cat.git
+```
+- Open In `Visual Studio Code`
+- Make sure you copy all of the project files including the hidden ones(.env).
+- Prepare your destination computer as in http://laravel.com/docs/
+- Check you have all the necessary `PHP extensions` available in php.ini as in above link requirements. Also, watch your PHP version!
+- Install `composer` https://getcomposer.org/doc/00-intro.md
+- Run `composer install`.
+- Run `php artisan key:generate` from the command line.
+- Run `php artisan cache:clear` from command line
+- Run `php artisan migrate:fresh --seed`
+- Enjoy
+
+## Documentation API
+You can view the documentation here or via the following link
+
+## Tech
+
+
 # Special Thanks
 ![Bangkit](https://github.com/cat-pedigree/.github/blob/main/assets/images/bangkit/bangkit.png)
