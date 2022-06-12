@@ -493,18 +493,128 @@ You can view the documentation here or via the following link
 }
 ```
 
-
 #### Logout
+
+* URL
+  * `/logout`
+* Method
+  * `POST`
+* Header
+  * `Authorization` : `Bearer <Token>`
+* Response
+
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "Token Revoked",
+    "data": true
+}
+```
 
 ### User
 
+#### Show User
+
+* URL
+  * `/user`
+* Method
+  * `GET`
+* Header
+  * `Authorization` : `Bearer <Token>`
+* Parameters
+  * `id` AS `Integer`, optional
+  * `nama` AS `String`, optional
+* Response
+
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "User data successfully retrieved",
+    "data": [
+        {
+            "id": 1,
+            "name": "Example",
+            "username": "example",
+            "email": "example@test.com",
+            "bio": null,
+            "profile_photo_path": null,
+            "following": 0,
+            "posts_count": 0,
+            "cats_count": 0,
+            "followers_count": 0,
+            "posts": [],
+            "cats": []
+        }
+    ]
+}
+```
+
+#### Update Profile
+
+* URL
+  * `/user`
+* Method
+  * `POST`
+* Header
+  * `Authorization` : `Bearer <Token>`
+  * `Content-Type` : `multipart/form-data`
+* Request Body
+  * `name` AS `String`
+  * `username` AS `String`, must be `Unique`
+  * `bio` AS `String`
+* Response
+
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "Profile Updated",
+    "data": {
+        "id": 1,
+        "name": "Example",
+        "username": "dejong",
+        "email": "indra@gmail.com",
+        "bio": "hahaha",
+        "profile_photo_path": null,
+        "following": 0,
+    }
+}
+```
+
+#### Update Photo Profile
+
+
+
+#### Update Email
+#### Update Password
+#### Delete User
+
 ### Veterinary
+
+#### All Veterinary
 
 ### Cat
 
+#### All Cat
+#### Search Cat
+#### Create Cat
+#### Update Cat
+#### Delete Cat
+
 ### Post
 
+#### All Post
+#### Create Post
+#### Delete Post
+#### Update Post
+
 ### Love
+
+#### All Love
+#### Create Love
+#### Delete Love
 
 ### Comment
 
