@@ -423,8 +423,61 @@ git clone https://github.com/cat-pedigree/api-cat.git
 ## Documentation API
 You can view the documentation here or via the following link
 
-## Tech
+### Endpoint
 
+### Authentication
+
+#### Register
+
+* URL
+  * `/register`
+* Method
+  * `POST`
+* Request Body
+  * `name` As `String`
+  * `username` As `String`, must be unique
+  * `email` AS `String`, must be unique
+  * `password` AS `String`, must be at least 8 characters
+* Response
+
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "User Registered",
+    "data": {
+        "access_token": "1|mULl4LxSEwvav01IYqx1WU9XGSOUl8zeqCoUSy6h",
+        "token_type": "Bearer",
+        "user": {
+            "id": 1,
+            "name": "Juna Luke",
+            "username": "Indra",
+            "email": "indra@gmail.com",
+            "bio": null,
+            "profile_photo_path": null,
+            "profile_photo_url": "https://ui-avatars.com/api/?name=J+L&color=7F9CF5&background=EBF4FF"
+        }
+    }
+}
+```
+
+#### Login
+
+#### Logout
+
+### User
+
+### Veterinary
+
+### Cat
+
+### Post
+
+### Love
+
+### Comment
+
+### Follower
 
 # Special Thanks
 ![Bangkit](https://github.com/cat-pedigree/.github/blob/main/assets/images/bangkit/bangkit.png)
