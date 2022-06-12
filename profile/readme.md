@@ -446,22 +446,53 @@ You can view the documentation here or via the following link
     "status": "success",
     "message": "User Registered",
     "data": {
-        "access_token": "1|mULl4LxSEwvav01IYqx1WU9XGSOUl8zeqCoUSy6h",
         "token_type": "Bearer",
         "user": {
             "id": 1,
-            "name": "Juna Luke",
-            "username": "Indra",
-            "email": "indra@gmail.com",
+            "name": "Example",
+            "username": "example",
+            "email": "example@test.com",
             "bio": null,
             "profile_photo_path": null,
-            "profile_photo_url": "https://ui-avatars.com/api/?name=J+L&color=7F9CF5&background=EBF4FF"
         }
     }
 }
 ```
 
 #### Login
+
+* URL
+  * `/login`
+* Method
+  * `POST`
+* Request Body
+  * `email` AS `String`,
+  * `password` AS `String`, must be at least 8 characters
+* Response
+
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "Authenticated",
+    "data": {
+        "token": "2|I90qc0BYVOyiGckrLtInFVzDZ7UXKto5uo6HHXSM",
+        "token_type": "Bearer",
+        "user": {
+            "id": 1,
+            "name": "Example",
+            "username": "example",
+            "email": "example@test.com",
+            "bio": null,
+            "profile_photo_path": null,
+            "posts_count": 0,
+            "cats_count": 0,
+            "followers_count": 0,
+        }
+    }
+}
+```
+
 
 #### Logout
 
