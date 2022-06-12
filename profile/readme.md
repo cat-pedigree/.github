@@ -941,9 +941,124 @@ You can view the documentation here or via the following link
 ### Post
 
 #### All Post
+
+* URL
+  * `/post/all`
+* Method
+  * `POST`
+* Header
+  * `Authorization` : `Bearer <Token>`
+* Request Body
+  * `user_id` AS `Integer`
+  * `id` AS `Integer`
+* Response
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "Post data successfully retrieved",
+    "data": [
+        {
+            "id": 1,
+            "user_id": 2,
+            "photo": "posts/photo-example-1655026284.jpg",
+            "title": "Examples",
+            "description": "Example",
+            "loves_count": 0,
+            "comments_count": 0,
+            "user": {
+                "id": 2,
+                "name": "Example",
+                "username": "Example",
+                "email": "example@test.com",
+                "bio": null,
+                "profile_photo_path": null,
+            },
+            "loves": [],
+            "comments": []
+        }
+    ]
+}
+```
+
 #### Create Post
+
+* URL
+  * `/post/create`
+* Method
+  * `POST`
+* Header
+  * `Authorization` : `Bearer <Token>`
+* Request Body
+  * `title` AS `String`
+  * `description` AS `String`
+  * `photo` AS `String`
+* Response
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "Data added successfully",
+    "data": {
+        "user_id": 2,
+        "photo": "posts/photo-example-1655026284.jpg",
+        "title": "Example",
+        "description": "Example",
+        "id": 1
+    }
+}
+```
+
 #### Delete Post
+
+* URL
+  * `/post/delete`
+* Method
+  * `DELETE`
+* Header
+  * `Authorization` : `Bearer <Token>`
+* Parameters
+  * `id` AS `Integer`
+* Response
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "data deleted successfully",
+    "data": 1
+}
+```
+
+
 #### Update Post
+
+* URL
+  * `/post/update`
+* Method
+  * `POST`
+* Header
+  * `Authorization` : `Bearer <Token>`
+* Request Body
+  * `title` AS `String`
+  * `description` AS `String`
+  * `photo` AS `String`
+* Parameters
+  * `photo` AS `String`
+* Response
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "Data added successfully",
+    "data": {
+        "user_id": 2,
+        "photo": "posts/photo-example-1655026284.jpg",
+        "title": "Example",
+        "description": "Example",
+        "id": 1
+    }
+}
+```
 
 ### Love
 
