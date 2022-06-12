@@ -1063,10 +1063,163 @@ You can view the documentation here or via the following link
 ### Love
 
 #### All Love
+
+* URL
+  * `/love/all`
+* Method
+  * `GET`
+* Header
+  * `Authorization` : `Bearer <Token>`
+* Response
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "Love data successfully retrieved",
+    "data": [
+        {
+            "id": 2,
+            "post_id": 2,
+            "user_id": 2,
+            "post": {
+                "id": 2,
+                "user_id": 2,
+                "photo": "posts/photo-example-1655032155.jpg",
+                "title": "Example",
+                "description": "Example",
+            },
+            "user": {
+                "id": 2,
+                "name": "Example",
+                "username": "Example",
+                "email": "example@test.com",
+                "bio": null,
+                "profile_photo_path": null,
+            }
+        }
+    ]
+}
+```
+
+
 #### Create Love
+
+* URL
+  * `/love/create`
+* Method
+  * `POST`
+* Header
+  * `Authorization` : `Bearer <Token>`
+* Request Body
+  * `post_id` AS `Integer`
+  * `user_id` AS `Integer`
+* Response
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "Data added successfully",
+    "data": {
+        "post_id": "2",
+        "user_id": 2,
+        "id": 2
+    }
+}
+```
+
 #### Delete Love
 
+* URL
+  * `/love/delete`
+* Method
+  * `DELETE`
+* Header
+  * `Authorization` : `Bearer <Token>`
+* Parameters
+  * `post_id` AS `Integer` Must be `required`
+  * `user_id` AS `Integer` Must be `required`
+* Response
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "data deleted successfully",
+    "data": {}
+}
+```
+
 ### Comment
+
+#### Create Comment
+
+* URL
+  * `/comment/create`
+* Method
+  * `POST`
+* Header
+  * `Authorization` : `Bearer <Token>`
+* Request Body
+  * `post_id` AS `Integer`
+  * `description` AS `String`
+* Response
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "Data added successfully",
+    "data": {
+        "post_id": "2",
+        "user_id": 2,
+        "description": "Example",
+        "updated_at": "2022-06-12T11:17:08.000000Z",
+        "created_at": "2022-06-12T11:17:08.000000Z",
+        "id": 1
+    }
+}
+```
+
+#### All Comment
+
+* URL
+  * `/comment/all`
+* Method
+  * `GET`
+* Header
+  * `Authorization` : `Bearer <Token>`
+* Request Body
+  * `post_id` AS `Integer`
+  * `user_id` AS `String`
+* Response
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "Comment data successfully retrieved",
+    "data": [
+        {
+            "id": 2,
+            "post_id": 2,
+            "user_id": 2,
+            "description": "Hello",
+            "post": {
+                "id": 2,
+                "user_id": 2,
+                "photo": "posts/photo-example-1655032155.jpg",
+                "title": "Example",
+                "description": "Example",
+            },
+            "user": {
+                "id": 2,
+                "name": "Siska",
+                "username": "Siska",
+                "email": "siska@gmail.com",
+                "bio": null,
+                "profile_photo_path": null,
+            }
+        }
+    ]
+}
+```
 
 ### Follower
 
