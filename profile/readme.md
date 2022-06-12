@@ -559,7 +559,6 @@ You can view the documentation here or via the following link
   * `POST`
 * Header
   * `Authorization` : `Bearer <Token>`
-  * `Content-Type` : `multipart/form-data`
 * Request Body
   * `name` AS `String`
   * `username` AS `String`, must be `Unique`
@@ -576,7 +575,7 @@ You can view the documentation here or via the following link
         "name": "Example",
         "username": "dejong",
         "email": "indra@gmail.com",
-        "bio": "hahaha",
+        "bio": "example",
         "profile_photo_path": null,
         "following": 0,
     }
@@ -585,20 +584,244 @@ You can view the documentation here or via the following link
 
 #### Update Photo Profile
 
-
+* URL
+  * `/change`
+* Method
+  * `POST`
+* Header
+  * `Authorization` : `Bearer <Token>`
+  * `Content-Type` : `multipart/form-data`
+* Request Body
+  * `profile_photo_path` AS `String`
+* Response
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "Profile Updated",
+    "data": {
+        "id": 1,
+        "name": "Example",
+        "username": "example",
+        "email": "example@test.com",
+        "bio": "example",
+        "profile_photo_path": null,
+    }
+}
+```
 
 #### Update Email
+
+* URL
+  * `/user/email`
+* Method
+  * `POST`
+* Header
+  * `Authorization` : `Bearer <Token>`
+* Request Body
+  * `email` AS `String`, must be `unique`
+* Response
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "Email Updated",
+    "data": {
+        "id": 1,
+        "name": "Example",
+        "username": "example",
+        "email": "example@test.com",
+        "bio": "example",
+        "profile_photo_path": null,
+    }
+}
+```
+
 #### Update Password
+
+* URL
+  * `/user/password`
+* Method
+  * `POST`
+* Header
+  * `Authorization` : `Bearer <Token>`
+* Request Body
+  * `password` AS `String`, must be at least `8 characters`
+* Response
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "Password Updated",
+    "data": {
+        "id": 1,
+        "name": "Example",
+        "username": "example",
+        "email": "example@test.com",
+        "bio": "example",
+        "profile_photo_path": null,
+    }
+}
+```
+
 #### Delete User
+
+* URL
+  * `/user/delete`
+* Method
+  * `DELETE`
+* Header
+  * `Authorization` : `Bearer <Token>`
+* Parameters
+  * `id` AS `Integer`
+* Response
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "User deleted successfully",
+    "data": 1
+}
+```
 
 ### Veterinary
 
 #### All Veterinary
 
+* URL
+  * `/veterinary`
+* Method
+  * `GET`
+* Header
+  * `Authorization` : `Bearer <Token>`
+* Response
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "Veterinary data successfully retrieved",
+    "data": [
+        {
+            "id": 50,
+            "name": "Alana Vet",
+            "city": "Jakarta",
+            "country": "Indonesia",
+            "lat": -6.282974808,
+            "lon": 106.9024418,
+            "created_at": null,
+            "updated_at": null
+        }
+    ]
+}
+```
+
 ### Cat
 
 #### All Cat
+
+* URL
+  * `/cat/all`
+* Method
+  * `GET`
+* Header
+  * `Authorization` : `Bearer <Token>`
+* Parameters
+  * `id` AS `Integer`, `optional`
+  * `name` AS `String`, `optional`
+  * `breed` AS `String`, `optional`
+  * `gender` AS `String`, `optional`
+  * `color` AS `String`, `optional`
+  * `age` AS `Integer`, `optional`
+* Response
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "cat data successfully retrieved",
+    "data": [
+        {
+            "id": 1,
+            "user_id": 2,
+            "name": "Example",
+            "breed": "Example",
+            "gender": "Example",
+            "color": "Example",
+            "eye_color": "Example",
+            "hair_color": "Example",
+            "ear_shape": "Example",
+            "weight": 5.6,
+            "age": 12,
+            "photo": "cats/photo-siska-1655023811.jpg",
+            "lat": null,
+            "lon": null,
+            "isWhite": 1,
+            "story": "Hello my friends",
+            "user": {
+                "id": 2,
+                "name": "Example",
+                "username": "example",
+                "email": "example@test.com",
+                "bio": null,
+                "profile_photo_path": null,
+            }
+        }
+    ]
+}
+```
+
 #### Search Cat
+
+* URL
+  * `/cat/all`
+* Method
+  * `GET`
+* Header
+  * `Authorization` : `Bearer <Token>`
+* Parameters
+  * `id` AS `Integer`, `optional`
+  * `name` AS `String`, `optional`
+  * `breed` AS `String`, `optional`
+  * `gender` AS `String`, `optional`
+  * `color` AS `String`, `optional`
+  * `age` AS `Integer`, `optional`
+* Response
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "cat data successfully retrieved",
+    "data": [
+        {
+            "id": 1,
+            "user_id": 2,
+            "name": "Example",
+            "breed": "Example",
+            "gender": "Example",
+            "color": "Example",
+            "eye_color": "Example",
+            "hair_color": "Example",
+            "ear_shape": "Example",
+            "weight": 5.6,
+            "age": 12,
+            "photo": "cats/photo-siska-1655023811.jpg",
+            "lat": null,
+            "lon": null,
+            "isWhite": 1,
+            "story": "Hello my friends",
+            "user": {
+                "id": 2,
+                "name": "Example",
+                "username": "example",
+                "email": "example@test.com",
+                "bio": null,
+                "profile_photo_path": null,
+            }
+        }
+    ]
+}
+```
+
+
 #### Create Cat
 #### Update Cat
 #### Delete Cat
