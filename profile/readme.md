@@ -1221,7 +1221,85 @@ You can view the documentation here or via the following link
 }
 ```
 
-### Follower
+### Follow
+
+#### Create Follow
+* URL
+  * `/follow/create`
+* Method
+  * `POST`
+* Header
+  * `Authorization` : `Bearer <Token>`
+* Request Body
+  * `user_id` AS `Integer`
+  * `follower_id` AS `Integer`
+* Response
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "Data added successfully",
+    "data": {
+        "user_id": "2",
+        "follower_id": "3",
+        "id": 2
+    }
+}
+```
+
+#### Delete Follow
+* URL
+  * `/follow/delete`
+* Method
+  * `DELETE`
+* Header
+  * `Authorization` : `Bearer <Token>`
+* Parameters
+  * `user_id` AS `Integer` Must be `required`
+  * `follower_id` AS `Integer` Must be `required`
+* Response
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "Data deleted successfully",
+    "data": 1
+}
+```
+
+#### Follow All
+* URL
+  * `/follow/all`
+* Method
+  * `GET`
+* Header
+  * `Authorization` : `Bearer <Token>`
+* Parameters
+  * `user_id` AS `Integer` Must be `optional`
+  * `follower_id` AS `Integer` Must be `optional`
+* Response
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "Data successfully retrieved",
+    "data": [
+        {
+            "id": 3,
+            "user_id": 2,
+            "follower_id": 3,
+            "user": {
+                "id": 2,
+                "name": "Example",
+                "username": "Example",
+                "email": "example@test.com",
+                "bio": null,
+                "profile_photo_path": null,
+            }
+        }
+    ]
+}
+```
 
 # Special Thanks
 ![Bangkit](https://github.com/cat-pedigree/.github/blob/main/assets/images/bangkit/bangkit.png)
