@@ -772,18 +772,16 @@ You can view the documentation here or via the following link
 #### Search Cat
 
 * URL
-  * `/cat/all`
+  * `/cat/search`
 * Method
   * `GET`
 * Header
   * `Authorization` : `Bearer <Token>`
 * Parameters
-  * `id` AS `Integer`, `optional`
-  * `name` AS `String`, `optional`
   * `breed` AS `String`, `optional`
   * `gender` AS `String`, `optional`
   * `color` AS `String`, `optional`
-  * `age` AS `Integer`, `optional`
+  * `isWhite` AS `Integer`, `optional`, `1|0`
 * Response
 ```json
 {
@@ -823,8 +821,122 @@ You can view the documentation here or via the following link
 
 
 #### Create Cat
+
+* URL
+  * `/cat/create`
+* Method
+  * `POST`
+* Header
+  * `Authorization` : `Bearer <Token>`
+* Request Body
+  * `name` AS `String`
+  * `breed` AS `String`
+  * `gender` AS `String`
+  * `color` AS `String`
+  * `eye_color` AS `String`
+  * `hair_color` AS `String`
+  * `ear_shape` AS `String`
+  * `weight` AS `Double`
+  * `age` AS `Int`
+  * `photo` AS `String`
+  * `isWhite` AS `Int` must be `1` | `0|
+  * `story` AS `String`
+* Response
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "Data added successfully",
+    "data": {
+        "user_id": 2,
+        "name": "Example",
+        "breed": "Example",
+        "gender": "example",
+        "color": "example",
+        "eye_color": "Example",
+        "hair_color": "Example",
+        "ear_shape": "Example",
+        "weight": "5.6",
+        "age": "12",
+        "photo": "cats/photo-example-1655023811.jpg",
+        "lat": null,
+        "lon": null,
+        "isWhite": "1",
+        "story": "Hello my friends",
+        "id": 1
+    }
+}
+```
+
 #### Update Cat
+
+* URL
+  * `/cat/update`
+* Method
+  * `POST`
+* Header
+  * `Authorization` : `Bearer <Token>`
+* Request Body
+  * `name` AS `String`
+  * `breed` AS `String`
+  * `gender` AS `String`
+  * `color` AS `String`
+  * `eye_color` AS `String`
+  * `hair_color` AS `String`
+  * `ear_shape` AS `String`
+  * `weight` AS `Double`
+  * `age` AS `Int`
+  * `photo` AS `String`
+  * `isWhite` AS `Int` must be `1` | `0|
+  * `story` AS `String`
+* Parameters
+  * `id` AS `Integer` must be `required`
+* Response
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "cat updated",
+    "data": {
+        "id": 1,
+        "user_id": 2,
+        "name": "Example",
+        "breed": "Example",
+        "gender": "example",
+        "color": "example",
+        "eye_color": "Example",
+        "hair_color": "Example",
+        "ear_shape": "Example",
+        "weight": "5.6",
+        "age": "12",
+        "photo": "cats/photo-example-1655025295.jpg",
+        "lat": null,
+        "lon": null,
+        "isWhite": 1,
+        "story": "Hello my friends",
+    }
+}
+```
+
 #### Delete Cat
+
+* URL
+  * `/cat/delete`
+* Method
+  * `DELETE`
+* Header
+  * `Authorization` : `Bearer <Token>`
+* Parameters
+  * `id` AS `Integer` must be `required`
+* Response
+```json
+{
+    "code": 200,
+    "status": "success",
+    "message": "data deleted successfully",
+    "data": 1
+}
+```
 
 ### Post
 
